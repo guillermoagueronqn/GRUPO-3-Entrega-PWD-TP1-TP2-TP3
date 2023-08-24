@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="../css/ejercicio.css">
     </head>
     <body>
-        <form id="form" name="form" method="post" action="resultado3.php">
+        <form id="form" name="form" method="post" action="formAccion3.php">
             <table>
                 <tr>
                     <td class="textForm">Nombre: </td>

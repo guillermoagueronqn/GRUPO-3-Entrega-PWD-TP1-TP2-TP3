@@ -1,16 +1,13 @@
 <html>
     <head>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- Css -->
+    <script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href= "../style.css">
     </head>
     <body>
         <div class = "container_4">
 
-        <form class = "form_4" action="resultado4.php" method = "get" name = "cinema" id = "cine" enctype="multipart/form-data" onsubmit = "return validador();">
+        <form class = "form_4" action="formAccion4.php" method = "get" name = "cinema" id = "cine" enctype="multipart/form-data" onsubmit = "return validador();">
             <h3>Cinem@s</h3>
             <div class = "row_4">
                 <table>
@@ -89,19 +86,19 @@
                     <td>
                         <strong>Restricci&oacute;n de edad</strong><br>
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="restriccion[]" id="restriccion_a" value = "a" required>
+                        <input class="form-check-input" type="radio" name="restriccion" id="restriccion_a" value = "a" required>
                         <label class="form-check-label" for="restriccion_a">
                             Todos los públicos
                         </label>
                         </div>
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="restriccion[]" id="restriccion_b" value = "b" checked>
+                        <input class="form-check-input" type="radio" name="restriccion" id="restriccion_b" value = "b" >
                         <label class="form-check-label" for="restriccion_b">
                             Mayores de 7 años
                         </label>
                         </div>
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="restriccion[]" id="restriccion_c" value = "c" checked>
+                        <input class="form-check-input" type="radio" name="restriccion" id="restriccion_c" value = "c" >
                         <label class="form-check-label" for="restriccion_c">
                             Mayores de 18 años
                         </label>

@@ -33,7 +33,7 @@
                 })
             });
         </script>
-        <form id="form" name="form" method="post" action="resultado2_3.php">
+        <form id="form" name="form" method="post" action="formAccion2_3.php">
             <table>
                 <tr>
                     <td class="textForm">Nombre: </td>

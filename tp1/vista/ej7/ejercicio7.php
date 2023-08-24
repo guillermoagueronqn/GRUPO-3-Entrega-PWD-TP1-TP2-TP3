@@ -38,7 +38,7 @@
             return resp;
         }
     </script>
-    <form action="resultado7.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
+    <form action="formAccion7.php" method="get" name="formulario" id="formulario" onsubmit="return validar();">
         <input type="text" name="numeroA" id="numeroA"> <br>
         <input type="text" name="numeroB" id="numeroB"> <br>
         <select name="operacion" id="operacion">

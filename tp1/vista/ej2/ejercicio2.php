@@ -72,7 +72,7 @@
                 error.innerHTML = "<li>Debe ingresar un numero del 0 al 6 en los campos</li>";
             }
         </script>
-        <form align="center" id="ejercicio2" name="ejercicio2" method="get" action="resultado2.php" onsubmit="return validarCampos();">
+        <form align="center" id="ejercicio2" name="ejercicio2" method="get" action="formAccion2.php" onsubmit="return validarCampos();">
             <h3>Ingrese las horas por dia de Programaci&oacute;n Web Din&aacute;mica</h3>
             <h3>Lunes:</h3><input id="lunes" name="lunes">
             <h3>Martes:</h3><input id="martes" name="martes">

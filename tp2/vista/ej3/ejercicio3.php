@@ -1,18 +1,15 @@
 <html>
     <head>
         <title>Ejercicio 3</title>
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- boostrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!-- Css -->
+        <script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href= "../css/style.css">
     </head>
     <body>
         <div class = "row">
         <div class = "col">
             <h3>Member Login</h3>
-        <form action="resultado3.php" id = "form_3" method = "get" name = "inicio" onsubmit = "return contraSegura();">
+        <form action="formAccion3.php" id = "form_3" method = "get" name = "inicio" onsubmit = "return contraSegura();">
                 <div class="mb-3">
                     <input type="text" class="form-control" name = "username" id = "username" required aria-describedby="emailHelp" placeholder = "Username">
                     <div id="emailHelp" class="form-text">Tus datos estan a salvo.</div>

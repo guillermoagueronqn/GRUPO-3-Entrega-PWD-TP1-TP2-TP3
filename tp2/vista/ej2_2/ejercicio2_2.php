@@ -62,7 +62,7 @@
             });
 
         </script>
-        <form align="center" id="ejercicio2" name="ejercicio2" method="get" action="resultado2_2.php">
+        <form align="center" id="ejercicio2" name="ejercicio2" method="get" action="formAccion2_2.php">
             <h3>Ingrese las horas por dia de Programaci&oacute;n Web Din&aacute;mica</h3>
             <h3>Lunes:</h3><input id="lunes" name="lunes">
             <h3>Martes:</h3><input id="martes" name="martes">

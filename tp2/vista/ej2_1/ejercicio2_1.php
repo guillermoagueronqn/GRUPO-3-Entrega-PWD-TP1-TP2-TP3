@@ -21,7 +21,7 @@
                 });
             });
         </script>
-        <form align="center" name="ejercicio1" id="ejercicio1" method="get" action="resultado2_1.php">
+        <form align="center" name="ejercicio1" id="ejercicio1" method="get" action="formAccion2_1.php">
             <h3>Ingrese un Numero </h3><input name="numero" id="numero"><br><br>
             <input type="submit" name="submit" id="submit" value="Aceptar"/><br><br>
             <div id="error" style="display: none;"><h3>Necesita ingresar un numero</h3></div>

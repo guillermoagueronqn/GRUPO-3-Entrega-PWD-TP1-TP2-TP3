@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2_8</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <script type="text/javascript">
@@ -20,7 +20,7 @@
             })
         })
     </script>
-    <form action="resultado2_8.php" method="post" name="formulario" id="formulario">
+    <form action="formAccion2_8.php" method="post" name="formulario" id="formulario">
         <label for="edad">Edad: </label>
         <input type="text" name="edad" id="edad"> <br>
         <h3>¿Eres estudiante?</h3>

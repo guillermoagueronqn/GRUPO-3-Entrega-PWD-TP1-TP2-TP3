@@ -20,7 +20,7 @@
             return resp;
         }
     </script>
-    <form action="resultado8.php" method="post" name="formulario" id="formulario" onsubmit="return validar();">
+    <form action="formAccion8.php" method="post" name="formulario" id="formulario" onsubmit="return validar();">
         <label for="edad">Edad: </label>
         <input type="text" name="edad" id="edad"> <br>
         <h3>¿Eres estudiante?</h3>

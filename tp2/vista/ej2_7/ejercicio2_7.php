@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2_7</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <script>
@@ -36,7 +36,7 @@
             })
         })
     </script>
-    <form action="resultado2_7.php" method="get" name="formulario" id="formulario">
+    <form action="formAccion2_7.php" method="get" name="formulario" id="formulario">
         <input type="text" name="numeroA" id="numeroA"> <br>
         <input type="text" name="numeroB" id="numeroB"> <br>
         <select name="operacion" id="operacion">

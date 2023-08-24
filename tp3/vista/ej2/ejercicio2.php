@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
 </head>
 <body>
-    <form action="resultado2.php" method="post" id="formulario" name="formulario" enctype="multipart/form-data">
+    <form action="formAccion2.php" method="post" id="formulario" name="formulario" enctype="multipart/form-data">
         <input type="file" name="miArchivo" id="miArchivo"> <br><br>
         <input type="submit" value="Enviar" name="Submit">
     </form>
