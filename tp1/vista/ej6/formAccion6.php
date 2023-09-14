@@ -1,29 +1,31 @@
 <?php
+    $tituloPagina = "TP 1 - Ejercicio 6 (Resultado)";
+    include_once("../encabezado.php");
+
+    include_once("../../util/funciones.php");
+    $datos = data_submitted();
+
     include_once("../../control/Control3.php");
-    include_once("../../control/Control4.php");
-    include_once("../../control/Control5.php");
-    include_once("../../control/Control6.php");
-
     $objControl3 = new Control3();
-    $datos = $objControl3 -> infoForm();
+    $info = $objControl3 -> infoForm($datos);
 
+    include_once("../../control/Control4.php");
     $objControl4 = new Control4();
-    $edad = $objControl4 -> esMayor($_GET['edad']);
+    $edad = $objControl4 -> esMayor($datos);
 
+    include_once("../../control/Control5.php");
     $objControl5 = new Control5();
-    $datos2 = $objControl5 -> infoForm();
+    $datos2 = $objControl5 -> infoForm($datos);
 
+    include_once("../../control/Control6.php");
     $objControl6 = new Control6();
-    $cantDeportes = $objControl6 -> cantDeportes();
+    $cantDeportes = $objControl6 -> cantDeportes($datos);
 ?>
 
-<html>
-    <head>
-        <title>Ejercicio 6 Resultado</title>
-    </head>
-    <body>
+<div id="ejercicio">
+    <div id="ejercicioFormulario">
         <?php
-                echo "Hola, yo soy " . $datos["nombre"] . ", " . $datos["apellido"] . " tengo " . $datos["edad"] . " año/s y vivo en " . $datos["direccion"] . ". <br> <br>";
+                echo "Hola, yo soy " . $info["nombre"] . ", " . $info["apellido"] . " tengo " . $info["edad"] . " año/s y vivo en " . $info["direccion"] . ". <br> <br>";
                 if($edad == true) {
                     echo "Soy mayor de edad. <br><br>";
                 } else {
@@ -39,5 +41,13 @@
                 echo " y soy " . $datos2["sexo"] . ". <br><br>";
                 echo "Practico " . $cantDeportes . " deporte/s. <br>";
         ?>
-    </body>
-</html>
+    </div>
+</div>
+
+<div id="volver">
+    <a href="ejercicio6.php">Volver</a>
+</div>
+
+<?php
+    include_once("../pie.php");
+?>

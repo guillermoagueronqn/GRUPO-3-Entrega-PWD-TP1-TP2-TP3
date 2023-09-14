@@ -1,16 +1,27 @@
 <?php
+    $tituloPagina = "TP 1 - Ejercicio 3 (Resultado)";
+    include_once("../encabezado.php");
+
+    include_once("../../util/funciones.php");
+    $datos = data_submitted();
+    
     include_once("../../control/Control3.php");
     $objControl3 = new Control3();
-    $datos = $objControl3 -> infoForm();
+    $info = $objControl3 -> infoForm($datos);
 ?>
 
-<html>
-    <head>
-        <title>Ejercicio 3 Resultado</title>
-    </head>
-    <body>
+<div id="ejercicio">
+    <div id="ejercicioFormulario">
         <?php
-            echo "Hola, yo soy " . $datos["nombre"] . ", " . $datos["apellido"] . " tengo " . $datos["edad"] . " año/s y vivo en " . $datos["direccion"] . ". <br>";
+            echo "Hola, yo soy " . $info["nombre"] . ", " . $info["apellido"] . " tengo " . $info["edad"] . " año/s y vivo en " . $info["direccion"] . ". <br>";
         ?>
-    </body>
-</html>
+    </div>
+</div>
+
+<div id="volver">
+    <a href="ejercicio3.php">Volver</a>
+</div>
+
+<?php
+    include_once("../pie.php");
+?>

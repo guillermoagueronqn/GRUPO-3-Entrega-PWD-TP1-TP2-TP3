@@ -1,17 +1,16 @@
-<html>
-    <head>
-        <title>Índice</title>
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <section class="bg-light">
-            <div class="container-lg">
-                <div class="text-center">
-                    <h2>Trabajo Práctico N°1</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
+<?php
+    $tituloPagina = "Índice";
+    include_once("encabezado.php");
+?>
+
+<div id="index">
+    <section id="tp1">
+        <div>
+            <div class="text-center">
+                <h2>Trabajo Práctico N°1</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
                     <div class="list-group">
                         <a href="../../tp1/vista/ej1/ejercicio1.php" class="list-group-item list-group-item-action list-group-item-primary">Ejercicio 1</a>
                         <a href="../../tp1/vista/ej2/ejercicio2.php" class="list-group-item list-group-item-action list-group-item-secondary">Ejercicio 2</a>
@@ -22,19 +21,19 @@
                         <a href="../../tp1/vista/ej7/ejercicio7.php" class="list-group-item list-group-item-action list-group-item-light">Ejercicio 7</a>
                         <a href="../../tp1/vista/ej8/ejercicio8.php" class="list-group-item list-group-item-action list-group-item-dark">Ejercicio 8</a>
                     </div>
-                    </div>
                 </div>
             </div>
-        </section>
-        <section class="bg-light">
-            <div class="container-lg">
-                <div class="text-center">
-                    <h2>Trabajo Práctico N°2</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="text-center">
+                <h2>Trabajo Práctico N°2</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
                     <div class="list-group">
-                        <div class="list-group-item list-group-item-action list-group-item-primary">Ejercicio 1</div>
+                        <div class="list-group-item list-group-item-primary">Ejercicio 1</div>
                         <blockquote class="blockquote text-center">
                             <p class="mb-0">Investigamos y elegimos la librería javaScript <b>JQuery</b> para realizar las validación de nuestros formularios.</p>
                         </blockquote>
@@ -49,25 +48,56 @@
                         <a href="../../tp2/vista/ej3/ejercicio3.php" class="list-group-item list-group-item-action list-group-item-secondary">Ejercicio 3</a>
                         <a href="../../tp2/vista/ej4/ejercicio4.php" class="list-group-item list-group-item-action list-group-item-success">Ejercicio 4</a>
                     </div>
-                    </div>
                 </div>
             </div>
-        </section>
-        <section class="bg-light">
-            <div class="container-lg">
-                <div class="text-center">
-                    <h2>Trabajo Práctico N°3</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="text-center">
+                <h2>Trabajo Práctico N°3</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
                     <div class="list-group">
                         <a href="../../tp3/vista/ej1/ejercicio1.php" class="list-group-item list-group-item-action list-group-item-primary">Ejercicio 1</a>
                         <a href="../../tp3/vista/ej2/ejercicio2.php" class="list-group-item list-group-item-action list-group-item-secondary">Ejercicio 2</a>
                         <a href="../../tp3/vista/ej3/ejercicio3.php" class="list-group-item list-group-item-action list-group-item-success">Ejercicio 3</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="text-center">
+                <h2>Trabajo Práctico N°4</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-primary">Ejercicio 1</div>
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">Se creo la capa datos en la carpeta Modelo, generando los archivos Auto.php y Persona.php, que contienen una clase por cada tabla de la Base de Datos.</p>
+                        </blockquote>
+                        <div class="list-group-item list-group-item-primary">Ejercicio 2</div>
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">Se creo la capa de control, generando los archivos AbmAuto.php y AbmPersona.php que permiten acceder al ORM y entregarle la información y entregarle la información a las paginas de la interface.</p>
+                        </blockquote>
+                        <a href="../../phpMysql/vista/ejercicios/VerAutos.php" class="list-group-item list-group-item-action list-group-item-success">Ejercicio 3 (VerAutos.php)</a>
+                        <a href="../../phpMysql/vista/ejercicios/buscarAuto.php" class="list-group-item list-group-item-action list-group-item-danger">Ejercicio 4 (buscarAuto.php)</a>
+                        <a href="../../phpMysql/vista/ejercicios/listaPersonas.php" class="list-group-item list-group-item-action list-group-item-warning">Ejercicio 5 (listaPersonas.php)</a>
+                        <a href="../../phpMysql/vista/ejercicios/NuevaPersona.php" class="list-group-item list-group-item-action list-group-item-info">Ejercicio 6 (NuevaPersona.php)</a>
+                        <a href="../../phpMysql/vista/ejercicios/NuevoAuto.php" class="list-group-item list-group-item-action list-group-item-light">Ejercicio 7 (NuevoAuto.php)</a>
+                        <a href="../../phpMysql/vista/ejercicios/CambioDuenio.php" class="list-group-item list-group-item-action list-group-item-dark">Ejercicio 8 (CambioDuenio.php)</a>
+                        <a href="../../phpMysql/vista/ejercicios/BuscarPersona.php" class="list-group-item list-group-item-action list-group-item-primary">Ejercicio 9 (BuscarPersona.php) </a>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
-</html>
+        </div>
+    </section>
+</div>
+
+<?php
+    include_once("pie.php");
+?>

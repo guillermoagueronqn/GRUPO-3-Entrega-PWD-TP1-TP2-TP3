@@ -1,14 +1,7 @@
 <?php
 
     class Control5 {
-        public function infoForm() {
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $datos["estudio"] = $_POST['estudio'];
-                $datos["sexo"] = $_POST['sexo'];
-            } elseif ($_SERVER["REQUEST_METHOD"] == "GET") {
-                $datos["estudio"] = $_GET['estudio'];
-                $datos["sexo"] = $_GET['sexo'];
-            }
+        public function infoForm($datos) {
             return $datos;
         }
     }

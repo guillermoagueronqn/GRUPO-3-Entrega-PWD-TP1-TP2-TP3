@@ -1,25 +1,27 @@
 <?php
+    $tituloPagina = "TP 2 - Ejercicio 2_5 (Resultado)";
+    include_once("../encabezado.php");
+
+    include_once("../../util/funciones.php");
+    $datos = data_submitted();
+
     include_once("../../control/Control2_3.php");
-    include_once("../../control/Control2_4.php");
-    include_once("../../control/Control2_5.php");
-
     $objControl2_3 = new Control2_3();
-    $datos = $objControl2_3 -> infoForm();
+    $info = $objControl2_3 -> infoForm($datos);
 
+    include_once("../../control/Control2_4.php");
     $objControl2_4 = new Control2_4();
-    $edad = $objControl2_4 -> esMayor($_GET['edad']);
+    $edad = $objControl2_4 -> esMayor($datos);
 
+    include_once("../../control/Control2_5.php");
     $objControl2_5 = new Control2_5();
-    $datos2 = $objControl2_5 -> infoForm();
+    $datos2 = $objControl2_5 -> infoForm($datos);
 ?>
 
-<html>
-    <head>
-        <title>Ejercicio 2_5 Resultado</title>
-    </head>
-    <body>
+<div id="ejercicio">
+    <div id="ejercicioFormulario">
         <?php
-                echo "Hola, yo soy " . $datos["nombre"] . ", " . $datos["apellido"] . " tengo " . $datos["edad"] . " año/s y vivo en " . $datos["direccion"] . ". <br> <br>";
+                echo "Hola, yo soy " . $info["nombre"] . ", " . $info["apellido"] . " tengo " . $info["edad"] . " año/s y vivo en " . $info["direccion"] . ". <br> <br>";
                 if($edad == true) {
                     echo "Soy mayor de edad. <br><br>";
                 } else {
@@ -34,5 +36,13 @@
                 }
                 echo " y soy " . $datos2["sexo"] . ". <br>";
         ?>
-    </body>
-</html>
+    </div>
+</div>
+
+<div id="volver">
+    <a href="ejercicio2_5.php">Volver</a>
+</div>
+
+<?php
+    include_once("../pie.php");
+?>

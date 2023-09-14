@@ -1,33 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2_8</title>
-    <script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
-</head>
-<body>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#formulario").submit(function(event){
-                var edad = $("#edad").val();
-                if (edad > 0 && edad != "" && Number.isInteger(Number(edad))){
-                    $("#edad").css("borderColor", "green");
-                } else {
-                    event.preventDefault();
-                    $("#edad").css("borderColor", "red");
-                }
-            })
+<?php
+    $tituloPagina = "TP 2 - Ejercicio 2_7";
+    include_once("../encabezado.php");
+?>
+
+<script type="text/javascript">
+    $(function(){
+        $("#submit").click(function(){
+            var edad = $("#edad").val();
+            if (edad > 0 && edad != "" && Number.isInteger(Number(edad))){
+                $("#edad").css("borderColor", "green");
+            } else {
+                event.preventDefault();
+                $("#edad").css("borderColor", "red");
+            }
         })
-    </script>
-    <form action="formAccion2_8.php" method="post" name="formulario" id="formulario">
+    })
+</script>
+
+<div id="ejercicio">
+    <form action="formAccion2_8.php" method="post" name="formulario" id="ejercicioFormulario">
         <label for="edad">Edad: </label>
         <input type="text" name="edad" id="edad"> <br>
         <h3>¿Eres estudiante?</h3>
         SI<input type="radio" name="esEstudiante" value="si"><br>
         NO<input type="radio" name="esEstudiante" checked value="no"><br>
-        <input type="submit" value="Enviar" name="Submit">
+        <input type="submit" value="Enviar" name="Submit" id="submit">
         <input type="reset" value="Limpiar" name="Reset">
     </form>
-</body>
-</html>
+</div>
+
+<div id="volver">
+    <a href="../../../index/vista/index.php">Volver</a>
+</div>
+
+<?php
+    include_once("../pie.php");
+?>
