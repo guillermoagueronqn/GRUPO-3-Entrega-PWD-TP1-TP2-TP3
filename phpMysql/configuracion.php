@@ -7,7 +7,7 @@
     //    CONFIGURACION APP    //
     /////////////////////////////
 
-    $PROYECTO = 'grupo3/phpMysql';
+    $PROYECTO = 'grupo3-entregaPWD/phpMysql';
 
     //variable que almacena el directorio del proyecto
     $ROOT = $_SERVER['DOCUMENT_ROOT'] . "/$PROYECTO/";
