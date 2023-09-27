@@ -38,6 +38,10 @@
                         } else {
                             $mensaje = "El auto ya existe en la base de datos, elija una patente distinta.";
                         }
+                    } else {
+                        if ($objTrans->alta($datos)) { 
+                            $mensaje = "La accion se realizo correctamente!";
+                        }
                     }
                 } else {
                     $mensaje = "No se encontró la persona.";

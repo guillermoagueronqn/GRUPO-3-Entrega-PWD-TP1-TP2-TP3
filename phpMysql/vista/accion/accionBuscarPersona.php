@@ -31,31 +31,40 @@
         <?php
             if ($obj != null) {
                 ?>
-                <form method="post" action="ActualizarDatosPersona.php" class="was-validated" onsubmit="return validaFechaNacimiento();">
+                <form method="post" action="ActualizarDatosPersona.php" class="was-validated">
                     <div class="form-group">
                         <label>Número de DNI:</label>
                         <input id="NroDni" readonly name="NroDni" class="form-control" width="80" type="text" value="<?php echo $obj->getNroDni()?>" required>
                     </div>
                     
                     <div class="form-group">
-                    <label>Apellido:</label><br/>
-                    <input id="Apellido" name="Apellido" class="form-control" type="text" value="<?php echo $obj->getApellido()?>" required pattern="^[a-zA-Z][a-zA-Z\s]*$">
-                            <div class="invalid-feedback">
-                                Solo letras.
-                            </div>
+                        <label>Apellido:</label><br/>
+                        <input id="Apellido" name="Apellido" class="form-control" type="text" value="<?php echo $obj->getApellido()?>" required pattern="^[a-zA-Z][a-zA-Z\s]*$">
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Solo letras.
+                        </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="Nombre">Nombre:</label><br/>
                         <input id="Nombre" name="Nombre" class="form-control" type="text" value="<?php echo $obj->getNombre()?>" required pattern="^[a-zA-Z][a-zA-Z\s]*$">
-                            <div class="invalid-feedback">
-                                Solo letras.
-                            </div>
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Solo letras.
+                        </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="fechaNac">Fecha de Nacimiento:</label><br/>
-                        <input id="fechaNac" name="fechaNac" class="form-control" type="text" value="<?php echo $obj->getFechaNac()?>" required pattern="^((2000|2400|2800|(19|2[0-9])(0[48]|[2468][048]|[13579][26]))-02-29)|(((19|2[0-9])[0-9]{2})-02-(0[1-9]|1[0-9]|2[0-8]))|(((19|2[0-9])[0-9]{2})-(0[13578]|10|12)-(0[1-9]|[12][0-9]|3[01]))|(((19|2[0-9])[0-9]{2})-(0[469]|11)-(0[1-9]|[12][0-9]|30))$">
+                        <input id="fechaNac" name="fechaNac" class="form-control" type="text" value="<?php echo $obj->getFechaNac()?>" required pattern="^(?!0000)(?:(?!02-29)(([1-9]\d(?:0[48]|[2468][048]|[13579][26])|([2468][048]|[13579][26])00)-02-29)|([1-9]\d{3}|[2-9]\d{3})-(0[1-9]|1[0-2])-(0[1-9]|1\d|2[0-8])|(?:([1-9]\d(?:0[48]|[2468][048]|[13579][26])|([2468][048]|[13579][26])00)-02-(?:29|30))|(?:([1-9]\d{3}|[2-9]\d{3})-(0[13-9]|1[0-2])-(?:29|30|31)))$">
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
                         <div class="invalid-feedback">
                             Ejemplo: 2000-05-30.
                         </div>
@@ -64,6 +73,9 @@
                     <div class="form-group">
                         <label>Teléfono:</label><br/>
                         <input id="Telefono" name="Telefono" class="form-control" type="text" value="<?php echo $obj->getTelefono()?>" required pattern="^[0-9][0-9]{4,}$">
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
                         <div class="invalid-feedback">
                             Minimo 5 números.
                         </div>
@@ -71,6 +83,9 @@
                     <div class="form-group">
                         <label>Domicilio:</label><br/>
                         <input id="Domicilio" name="Domicilio" class="form-control" type="text" value="<?php echo $obj->getDomicilio()?>" required pattern="^[a-zA-Z][a-zA-Z0-9\s]*$">
+                        <div class="valid-feedback">
+                            Correcto.
+                        </div>
                         <div class="invalid-feedback">
                             Se aceptan números letras y espacios.
                         </div>

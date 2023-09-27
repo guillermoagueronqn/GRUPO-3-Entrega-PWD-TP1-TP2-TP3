@@ -17,6 +17,9 @@
             <div class="form-group">
                 <label>DNI:</label><br/>
                 <input id="NroDni" name="NroDni" class="form-control" type="text" required pattern="[0-9]{8}">
+                <div class="valid-feedback">
+                    Correcto.
+                </div>
                 <div class="invalid-feedback">
                     Ingrese un DNI de 8 digitos.
                 </div>
@@ -24,7 +27,6 @@
             <br/>
             <input id="accion" name ="accion" value="buscar" type="hidden">
             <input type="submit" class="btn btn-primary">
-		    
         </form>
         <br><a href="listaPersonas.php"><button class = "btn btn-primary">Volver</button></a>
     </div>

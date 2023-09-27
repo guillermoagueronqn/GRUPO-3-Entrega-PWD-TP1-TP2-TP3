@@ -13,10 +13,13 @@
 <div id="ejercicio">
     <div id="ejercicioFormulario">
         <h3>Auto (Cambio Dueño)</h3>
-            <form method="post" action="../accion/accionCambioDuenio.php" class="was-validated" onsubmit="return validaCambioDuenio();">
+            <form method="post" action="../accion/accionCambioDuenio.php" class="was-validated">
                 <div class="form-group">
                     <label for="Patente">Patente:</label><br/>
                     <input id="Patente" name="Patente" width="80" type="text" class="form-control" required pattern="[A-Z]{3} \d{3}">
+                    <div class="valid-feedback">
+                        Correcto.
+                    </div>
                     <div class="invalid-feedback">
                         La patente es 3 letras mayúsculas, espacio y 3 números.
                     </div>
@@ -25,6 +28,9 @@
                 <div class="form-group">
                     <label>DNI del Dueño:</label><br/>
                     <input type="text" id="DniDuenio" name="DniDuenio" class="form-control" required pattern="[0-9]{8}">
+                    <div class="valid-feedback">
+                        Correcto.
+                    </div>
                     <div class="invalid-feedback">
                         El DNI consta de 8 números.
                     </div>

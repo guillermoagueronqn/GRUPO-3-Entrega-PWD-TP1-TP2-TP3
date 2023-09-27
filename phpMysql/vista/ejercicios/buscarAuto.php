@@ -8,10 +8,13 @@
 <div id="ejercicio">
     <div id="ejercicioFormulario">
         <h3>Auto (Buscar)</h3>
-        <form method="post" action="../accion/accionBuscarAuto.php" class="was-validated" onsubmit="return validarPatente();">
+        <form method="post" action="../accion/accionBuscarAuto.php" class="was-validated">
             <div class="form-group">
                 <label for="Patente">Patente:</label><br/>
                 <input id="Patente" name="Patente" type="text" class="form-control" required pattern="[A-Z]{3} \d{3}">
+                <div class="valid-feedback">
+                    Correcto.
+                </div>
                 <div class="invalid-feedback">
                     La patente es 3 letras mayúsculas, espacio y 3 números.
                 </div>

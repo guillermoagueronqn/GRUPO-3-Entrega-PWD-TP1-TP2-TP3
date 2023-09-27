@@ -8,10 +8,13 @@
 <div id="ejercicio">
     <div id="ejercicioFormulario">
         <h3>Persona (Buscar)</h3>
-        <form method="post" action="../accion/accionBuscarPersona.php" class="was-validated" onsubmit="return validaDniPersona();">
+        <form method="post" action="../accion/accionBuscarPersona.php" class="was-validated">
             <div class="form-group">
                 <label for="">DNI:</label><br/>
                 <input id="NroDni" name="NroDni" class="form-control" type="text" required pattern="[0-9]{8}">
+                <div class="valid-feedback">
+                    Correcto.
+                </div>
                 <div class="invalid-feedback">
                     Ingrese un DNI de 8 números.
                 </div>    

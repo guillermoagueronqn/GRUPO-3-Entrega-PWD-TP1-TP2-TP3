@@ -48,6 +48,8 @@
                 } else {
                     $mensaje = "El auto no existe en la base de datos.";
                 }
+            } else {
+                $mensaje = "No existen autos en la base de datos.";
             }
         }
     }
