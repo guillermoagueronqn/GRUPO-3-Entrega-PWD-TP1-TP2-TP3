@@ -31,7 +31,7 @@
         <?php
             if ($obj != null) {
                 ?>
-                <form method="post" action="ActualizarDatosPersona.php" class="was-validated">
+                <form method="post" action="ActualizarDatosPersona.php" class="needs-validation" novalidate>
                     <div class="form-group">
                         <label>Número de DNI:</label>
                         <input id="NroDni" readonly name="NroDni" class="form-control" width="80" type="text" value="<?php echo $obj->getNroDni()?>" required>
@@ -94,6 +94,7 @@
                     <input id="accion" name ="accion" value="editar" type="hidden">
                     <input type="submit" class="btn btn-primary">
                     </form>
+                    <script src="../js/function4.js"></script>
                 <?php
             } else {
                 echo "<p>No se encontró la persona con el dni ingresado</p>";

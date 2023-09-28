@@ -8,7 +8,7 @@
 <div id="ejercicio">
     <div id="ejercicioFormulario">
         <h3>Persona (Buscar)</h3>
-        <form method="post" action="../accion/accionBuscarPersona.php" class="was-validated">
+        <form method="post" action="../accion/accionBuscarPersona.php" class="needs-validation" novalidate>
             <div class="form-group">
                 <label for="">DNI:</label><br/>
                 <input id="NroDni" name="NroDni" class="form-control" type="text" required pattern="[0-9]{8}">
@@ -23,6 +23,7 @@
             <input id="accion" name="accion" value="buscar" type="hidden">
             <input type="submit" class="btn btn-primary">
         </form>
+        <script src="../js/function4.js"></script>
     </div>
 </div>
 

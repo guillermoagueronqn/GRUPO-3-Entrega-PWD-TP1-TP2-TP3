@@ -8,7 +8,7 @@
 <div id="ejercicio">
     <div id="ejercicioFormulario">
         <h3>Auto (Nuevo)</h3>
-        <form method="post" action="../accion/accionNuevoAuto.php" class="was-validated">
+        <form method="post" action="../accion/accionNuevoAuto.php" class="needs-validation" novalidate>
             <div class="form-group">
                 <label for="Patente">Patente:</label>
                 <input id="Patente" name="Patente" type="text" class="form-control" required pattern="[A-Z]{3} \d{3}">
@@ -53,6 +53,7 @@
             <input id="accion" name="accion" value="nuevo" type="hidden">
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <script src="../js/function4.js"></script>
     </div>
 </div>
 

@@ -13,7 +13,7 @@
 <div id="ejercicio">
     <div id="ejercicioFormulario">
         <h3>Persona (Autos Por Persona)</h3>
-        <form method="post" action="../accion/accionAutosPersona.php" class="was-validated">
+        <form method="post" action="../accion/accionAutosPersona.php" class="needs-validation" novalidate>
             <div class="form-group">
                 <label>DNI:</label><br/>
                 <input id="NroDni" name="NroDni" class="form-control" type="text" required pattern="[0-9]{8}">
@@ -21,13 +21,14 @@
                     Correcto.
                 </div>
                 <div class="invalid-feedback">
-                    Ingrese un DNI de 8 digitos.
+                    Ingrese un DNI de 8 dígitos.
                 </div>
             </div>
             <br/>
             <input id="accion" name ="accion" value="buscar" type="hidden">
             <input type="submit" class="btn btn-primary">
         </form>
+        <script src="../js/function4.js"></script>
         <br><a href="listaPersonas.php"><button class = "btn btn-primary">Volver</button></a>
     </div>
 </div>
